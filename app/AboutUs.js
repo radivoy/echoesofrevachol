@@ -31,7 +31,7 @@ export default function AboutUs() {
 
       <a href='https://ko-fi.com/Z8Z0170FD0' target='_blank' className={styles.pyrholidon}>
         <Image
-          src="/kofi.png"
+          src="/echoesofrevachol/kofi.png"
           width={20}
           height={20}
           alt="Buy us Pyrholidon"
