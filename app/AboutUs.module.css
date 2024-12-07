@@ -1,0 +1,65 @@
+.aboutUs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    max-width: 700px;
+    margin:auto;
+    padding:10%;
+    font-size: 14px;
+    line-height: 24px;
+}  
+@media all and (min-width:960px) {
+    .aboutUs {
+        padding:5%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+.aboutUs p {
+    margin:10px auto;
+}
+.int {
+    color:#5BC3D7;
+}
+.aboutUsImg {
+    height:125px;
+    width:125px;
+    background:url(../public/aboutus.png) no-repeat center / cover;
+    border:10px solid #31312F;
+    margin:5% auto 3%;
+    border-radius: 50%;
+}
+@media all and (min-width:960px) {
+    .aboutUsImg {
+        height:150px;
+        width:150px;
+    }
+}
+.pyrholidon {
+    background-color:#FF6433;
+    border-radius:14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    font-size:16px;
+    line-height: 16px;
+    letter-spacing: 0.025rem;
+    padding:10px 15px;
+    cursor: pointer;
+    color:#fff;
+    margin-top:5%;
+}
+.pyrholidon:hover {
+    background-color:#F44B16; 
+}
+.linkMail {
+    color:#A2A2A3;
+    font-size: 13px;
+    line-height: 13px;
+    margin:10% auto;
+}
+.linkMail:hover {
+    color:#f1f1f1;
+}

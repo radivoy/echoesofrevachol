@@ -1,0 +1,158 @@
+.printHome {
+   position:relative;
+   padding: 8% 10%;
+}
+.printHome:before {
+    content:'';
+    background: url(../public/revachol.png) no-repeat center bottom / cover;
+    opacity: 0.9;
+    width:100%;
+    height:440px;
+    position:absolute;
+    top:-100%;
+    left:0;
+    display: block;
+    z-index: 0;
+}
+@media all and (min-width:960px) {
+    .printHome {
+        overflow: hidden;
+        margin-top: -15%; 
+        transform: translateY(-5%);
+        padding: 8% 10% 3%;
+    }
+    .printHome:before {
+        opacity: 0.2;
+        height:100%;
+        top:0;
+        z-index: -1;
+    }
+}
+.printHome:after {
+    content:'';
+    display: block;
+    width:100%;
+    height:440px;
+    position:absolute;
+    top:-100%;
+    left:0;
+    z-index: 0;
+    background: rgb(13,14,16);
+    background: -moz-linear-gradient(180deg, rgba(13,14,16,1) 0%, rgba(13,14,16,0) 50%, rgba(13,14,16,0) 50%, rgba(13,14,16,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(13,14,16,1) 0%, rgba(13,14,16,0) 50%, rgba(13,14,16,0) 50%, rgba(13,14,16,1) 100%);
+    background: linear-gradient(180deg, rgba(13,14,16,1) 0%, rgba(13,14,16,0) 50%, rgba(13,14,16,0) 50%, rgba(13,14,16,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0e10",endColorstr="#0d0e10",GradientType=1);
+}
+@media all and (min-width:960px) {
+    .printHome:after {
+        top:auto;
+        bottom:0;
+        height:100%;
+        background: -moz-linear-gradient(180deg, rgba(13,14,16,1) 0%, rgba(13,14,16,0) 40%, rgba(13,14,16,0) 60%, rgba(13,14,16,1) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(13,14,16,1) 0%, rgba(13,14,16,0) 40%, rgba(13,14,16,0) 60%, rgba(13,14,16,1) 100%);
+        background: linear-gradient(180deg, rgba(13,14,16,1) 0%, rgba(13,14,16,0) 40%, rgba(13,14,16,0) 60%, rgba(13,14,16,1) 100%);
+    }
+}
+.printHomeContent {
+    text-align: center;
+    font-size:14px;
+    line-height: 24px;
+    position:relative;
+    z-index: 1;
+}
+@media all and (min-width:960px) {
+    .printHomeContent {
+        padding:10% 15%;
+        border:1px solid #ffffff50;
+        border-radius:10px;
+        font-size:18px;
+        line-height: 32px;
+    }
+}
+@media all and (min-width:1400px) {
+    .printHomeContent {
+        padding:10% 30%;
+    }
+}
+.printHomeContent span {
+    font-size:16px;
+    display: block;
+    margin-bottom:5px;
+    color:#f1f1f1;
+}
+@media all and (min-width:960px) {
+    .printHomeContent span {
+        font-size:24px;
+        margin-bottom:8px;
+    } 
+}
+.btn {
+    background: #90270F;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 0 5px 15px;
+    display: block;
+    font-size: 18px;
+    margin: 1rem auto 0;
+    transition: background ease 200ms;
+    text-align: left;
+    max-width: 360px;
+}
+@media all and (min-width:960px) {
+    .btn {
+        padding: 10px 0 5px 15px;
+        font-size: 21px;
+        margin: 2rem auto 0;
+    }
+}
+.btn:hover {
+    background: #a72b0f;
+}
+.btn img {
+    margin:10px 0 -5px 10px;
+}
+.simpleLink {
+    text-decoration: underline;
+    display: block;
+    margin:10px auto;
+    font-size: 14px;
+}
+@media all and (min-width:960px) {
+    .simpleLink {
+        font-size: 16px;
+    }
+}
+.simpleLink:hover {
+    color:#f1f1f1;
+}
+.dice {
+    display: flex;
+    padding:10px 12px;
+    border-radius: 5px;
+    border:1px solid #fff;
+    margin:30px auto 0;
+    gap:15px;
+    opacity:0.75;
+}
+.dice:hover {
+    opacity: 0.85;
+}
+.dice span {
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    margin:0;
+}  
+
+@media all and (min-width:960px) {
+    .dice span {
+        font-size: 16px;
+        line-height: 21px;
+    } 
+}
+
+@media all and (max-width:959px) {
+    .dice span br {
+        display: none;
+    }
+}
