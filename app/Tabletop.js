@@ -15,7 +15,7 @@ export default function tableTop() {
       <span className={dobraBook.className}> Available also on</span>
       <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3363215363" target="_blank">
         <Image
-          src="/tabletop.png"
+          src="/echoesofrevachol/tabletop.png"
           width={273}
           height={101}
           alt="Tabletop Simulator"
@@ -24,7 +24,7 @@ export default function tableTop() {
       <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3363215363" target="_blank" className={`${encode.className} ${styles.tableTopBtn}`}>
         Workshop on Steam
         <Image
-          src="/steam.svg"
+          src="/echoesofrevachol/steam.svg"
           width={24}
           height={24}
           alt="Workshop on Steam"

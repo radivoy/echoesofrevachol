@@ -32,7 +32,7 @@ export default function PrintHome() {
         >
           Download printables
           <Image
-            src="/drive.svg"
+            src="/echoesofrevachol/drive.svg"
             width={28}
             height={28}
             alt="Download printables"
@@ -49,7 +49,7 @@ export default function PrintHome() {
         </a>
         <div className={styles.dice}>
           <Image
-            src="/dice.svg"
+            src="/echoesofrevachol/dice.svg"
             width={32}
             height={32}
             alt="Two six-sided dice"
