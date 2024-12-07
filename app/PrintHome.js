@@ -39,7 +39,7 @@ export default function PrintHome() {
           />
         </a>
         <a
-          href="/EchoesOfRevachol_Rulebook.pdf"
+          href="/echoesofrevachol/EchoesOfRevachol_Rulebook.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.simpleLink}
