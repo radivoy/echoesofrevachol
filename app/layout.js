@@ -1,6 +1,7 @@
 import { baskerville } from '@/app/ui/fonts';
 import Head from 'next/head'; // Import Head from Next.js
 import './globals.css'; // Import your global styles
+import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata = {
   title: 'Echoes of Revachol',
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
           <meta property="og:locale" content={metadata.openGraph.locale} />
           <meta property="og:type" content={metadata.openGraph.type} />
         </Head>
+        <GoogleAnalytics ga_id="G-06MP1T1PDS" />
         {children}
       </body>
     </html>
