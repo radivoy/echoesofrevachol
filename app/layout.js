@@ -1,35 +1,23 @@
 import { baskerville } from '@/app/ui/fonts';
 import "./globals.css";
-import { Metadata } from "next";
-
-export async function generateMetadata() {
-  const title = "Echoes of Revachol";
-
-  const description = "A Disco Elysium Card Game";
-
-  return {
-    metadataBase: new URL(baseUrl),
-    title: title,
-    description: description,
-    themeColor: "black",
-    openGraph: {
-      title: title,
-      description: description,
-      url: "https://radivoy.github.io/echoesofrevachol/",
-      images: [
-        {
-          url: "https://radivoy.github.io/echoesofrevachol/image.png",
-          secureUrl: "https://radivoy.github.io/echoesofrevachol/image.png",
-          width: 1440,
-          height: 820,
-          alt: "Echoes of Revachol, a Disco Elysium card game",
-        },
-      ],
-      type: "website",
-      siteName: "Echoes of Revachol, a Disco Elysium card game",
-    },
-  };
-}
+ 
+export const metadata = {
+  openGraph: {
+    title: 'Echoes of Revachol',
+    description: 'A Disco Elysium Card Game',
+    url: 'https://radivoy.github.io/echoesofrevachol/',
+    siteName: 'Echoes of Revachol',
+    images: [
+      {
+        url: 'https://radivoy.github.io/echoesofrevachol/image.png',
+        width: 1440,
+        height: 820,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
