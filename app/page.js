@@ -6,7 +6,6 @@ import PrintHome from "./PrintHome";
 import Tabletop from "./Tabletop";
 import AboutUs from "./AboutUs";
 
-
 export default function Home() {
   const sentence =
     "[VOLITION] - You’ve solved worse cases. Or maybe not. But you’re still standing, and that counts for something. Come on. One more for the books.";

@@ -1,35 +1,39 @@
 import { baskerville } from '@/app/ui/fonts';
-import Head from 'next/head'; // Import Head component for meta tags
-import './globals.css';
+import "./globals.css";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Echoes of Revachol",
-  description: "A Disco Elysium Card Game",
-  url: "https://radivoy.github.io/echoesofrevachol", 
-  image: "https://radivoy.github.io/echoesofrevachol/image.png", 
-};
+export async function generateMetadata() {
+  const title = "Echoes of Revachol";
+
+  const description = "A Disco Elysium Card Game";
+
+  return {
+    metadataBase: new URL(baseUrl),
+    title: title,
+    description: description,
+    themeColor: "black",
+    openGraph: {
+      title: title,
+      description: description,
+      url: "https://radivoy.github.io/echoesofrevachol/",
+      images: [
+        {
+          url: "https://radivoy.github.io/echoesofrevachol/image.png",
+          secureUrl: "https://radivoy.github.io/echoesofrevachol/image.png",
+          width: 1440,
+          height: 820,
+          alt: "Echoes of Revachol, a Disco Elysium card game",
+        },
+      ],
+      type: "website",
+      siteName: "Echoes of Revachol, a Disco Elysium card game",
+    },
+  };
+}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        {/* Basic Meta Tags */}
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content={metadata.image} />
-        <meta property="og:url" content={metadata.url} />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={metadata.title} />
-        <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content={metadata.image} />
-      </Head>
       <body className={`${baskerville.className} antialiased`}>
         {children}
       </body>
