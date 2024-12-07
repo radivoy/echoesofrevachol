@@ -3,6 +3,8 @@ import Head from 'next/head'; // Import Head from Next.js
 import './globals.css'; // Import your global styles
 
 export const metadata = {
+  title: 'Echoes of Revachol',
+  description: 'A Disco Elysium Card Game',
   openGraph: {
     title: 'Echoes of Revachol',
     description: 'A Disco Elysium Card Game',
