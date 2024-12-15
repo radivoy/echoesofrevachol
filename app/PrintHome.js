@@ -62,7 +62,14 @@ export default function PrintHome() {
             The kind detectives always keep in their pockets—just in case.
           </span>
         </div>
-      </div>
+        <div className={`${styles.mpc} ${styles.ants} ${dobraBook.className}`}>
+          <div className={encode.className}>
+            <span>You can also print it at</span>
+            <a href="https://www.makeplayingcards.com" title="Make Playing Cards">MakePlayingCards.com</a>
+          </div>
+          <div>Email us to <a href="mailto:echoesofrevachol@gmail.com" className={dobraMedium.className}>echoesofrevachol@gmail.com</a> and we'll share you the project!</div>
+        </div>
+      </div>      
     </div>
   );
 }
