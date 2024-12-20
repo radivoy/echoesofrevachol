@@ -33,41 +33,93 @@ export default function PrintHome() {
           Download printables
           <Image
             src="/echoesofrevachol/drive.svg"
+            //src="/drive.svg"
             width={28}
             height={28}
             alt="Download printables"
           />
-        </a>
-        <a
-          href="/echoesofrevachol/EchoesOfRevachol_Rulebook.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.simpleLink}
-          title="Download rules"
-        >
-          or download rules only
-        </a>
+          <span className={`${dobraBook.className} ${styles.btnSpan}`}>
+            Now in <strong className={`${dobraMedium.className}`}>English</strong>, <strong className={`${dobraMedium.className}`}>Spanish</strong> and <strong className={`${dobraMedium.className}`}>Russian</strong>! 
+          </span>
+        </a>  
+        <div className={styles.rules}>     
+          <a
+            href="/echoesofrevachol/EchoesOfRevachol_Rulebook.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.simpleLink}
+            title="Download rules"
+          >
+            or download rules only
+          </a>
+          <a
+            href="/echoesofrevachol/EchoesOfRevachol_Rulebook.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.simpleLink}
+            title="Download rules"
+          >
+            <Image
+              src="/echoesofrevachol/eng.svg"
+              //src="/eng.svg"
+              width={20}
+              height={14}
+              alt="English"
+            />
+          </a>
+          <a
+            href="/echoesofrevachol/EcosdeRevachol_Reglas.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.simpleLink}
+            title="Download rules"
+          >
+            <Image
+              src="/echoesofrevachol/esp.svg"
+              //src="/esp.svg"
+              width={20}
+              height={14}
+              alt="Español"
+            />
+          </a>
+          <a
+            href="/echoesofrevachol/Правила-Rulebook.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.simpleLink}
+            title="Download rules"
+          >
+            <Image
+              src="/echoesofrevachol/rus.svg"
+              //src="/rus.svg"
+              width={20}
+              height={14}
+              alt="Russian"
+            />
+          </a>
+        </div> 
         <div className={styles.dice}>
           <Image
             src="/echoesofrevachol/dice.svg"
+            //src="/dice.svg"
             width={32}
             height={32}
             alt="Two six-sided dice"
           />
           <span className={dobraBook.className}>
             <strong className={dobraMedium.className}>
-              Remember — You’ll need two six-sided dice.
+              Remember — You’ll need two six-sided dice. 
             </strong>
             <br />
             The kind detectives always keep in their pockets—just in case.
           </span>
         </div>
-        <div className={`${styles.mpc} ${styles.ants} ${dobraBook.className}`}>
-          <div className={encode.className}>
-            <span>You can also print it at</span>
-            <a href="https://www.makeplayingcards.com" title="Make Playing Cards">MakePlayingCards.com</a>
-          </div>
-          <div>Email us to <a href="mailto:echoesofrevachol@gmail.com" className={dobraMedium.className}>echoesofrevachol@gmail.com</a> and we'll share you the project!</div>
+        <div className={`${dobraBook.className} ${styles.credits}`}>
+          Credits for the Russian translation to <strong className={`${dobraMedium.className}`}>Ilya F</strong> ❤️!
+        </div>
+
+        <div className={`${styles.mpc}`}>
+          <span>[SUGGESTION]</span> - Having trouble printing the cards? That’s alright — it’s nothing to worry about. We can share you the project on <a href="https://www.makeplayingcards.com" title="Make Playing Cards" target="_blank" rel="noopener noreferrer">makeplayingcards.com</a>, completely free. There’s nothing in it for us, just a chance to make things simpler for you. Email us to <a href="https://www.makeplayingcards.com" title="Make Playing Cards">echoesofrevachol@gmail.com</a>
         </div>
       </div>      
     </div>

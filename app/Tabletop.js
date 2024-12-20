@@ -16,20 +16,56 @@ export default function tableTop() {
       <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3363215363" target="_blank">
         <Image
           src="/echoesofrevachol/tabletop.png"
+          //src="/tabletop.png"
           width={273}
           height={101}
           alt="Tabletop Simulator"
         />
       </a>
-      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3363215363" target="_blank" className={`${encode.className} ${styles.tableTopBtn}`}>
-        Workshop on Steam
-        <Image
-          src="/echoesofrevachol/steam.svg"
-          width={24}
-          height={24}
-          alt="Workshop on Steam"
-        />
-      </a>
+      <div className={styles.tableTopBtns}>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3363215363" target="_blank" className={`${encode.className} ${styles.tableTopBtn}`}>
+          English
+          <Image
+            src="/echoesofrevachol/eng.svg"
+            //src="/eng.svg"
+            width={24}
+            height={18}
+            alt="English"
+          />
+        </a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3386925048" target="_blank" className={`${encode.className} ${styles.tableTopBtn}`}>
+          Spanish
+          <Image
+            src="/echoesofrevachol/esp.svg"
+            //src="/esp.svg"
+            width={24}
+            height={18}
+            alt="Spanish"
+          />
+        </a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3385572414" target="_blank" className={`${encode.className} ${styles.tableTopBtn} ${styles.tableTopBtnTxt}`}>
+          русский
+          <Image
+            src="/echoesofrevachol/rus.svg"
+            //src="/rus.svg"
+            width={24}
+            height={18}
+            alt="Russian"
+          />
+          <span>By <strong>Zverobob</strong> & <strong>AmaliaMoon</strong></span>
+        </a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3384766121" target="_blank" className={`${encode.className} ${styles.tableTopBtn} ${styles.tableTopBtnTxt}`}>
+          中文
+          <Image
+            src="/echoesofrevachol/chin.svg"
+            //src="/chi.svg"
+            width={24}
+            height={18}
+            alt="Chinese"
+          />
+          <span>By <strong>18公斤的鳳梨</strong></span>
+        </a>
+      </div>
     </div>
   );
 }
