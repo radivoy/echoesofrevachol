@@ -57,7 +57,7 @@ export default function tableTop() {
         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3384766121" target="_blank" className={`${encode.className} ${styles.tableTopBtn} ${styles.tableTopBtnTxt}`}>
           中文
           <Image
-            src="/echoesofrevachol/chin.svg"
+            src="/echoesofrevachol/chi.svg"
             //src="/chi.svg"
             width={24}
             height={18}
