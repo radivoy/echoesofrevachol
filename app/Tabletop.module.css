@@ -15,18 +15,44 @@
         font-size: 18px;
     }
 }
+.tableTopBtns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    max-width: 375px;
+}
 .tableTopBtn {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding:12px 30px 14px;
+    justify-content: space-between;
+    padding:12px 30px 14px 10px;
     background:#252E3A;
     text-transform: uppercase;
     color:#fff;
     gap:20px;
     font-size: 14px;
     letter-spacing: 0.025rem;
+    position: relative;
+}
+.tableTopBtnTxt {
+    padding-bottom:40px;
 }
 .tableTopBtn:hover {
     background:#2E3F56;
+}
+.tableTopBtn span {
+    display: block;
+    background: #fff;
+    color:#2E3F56;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:5px 10px;
+    font-size:13px;
+    text-transform: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }

@@ -15,6 +15,7 @@ export default function Home() {
       <header className={styles.header}>
         <Image
           src="/echoesofrevachol/logo.png"
+          //src="/logo.png"
           width={448}
           height={261}
           alt="Echos of Revachol A Disco Elysium Card Game"
@@ -26,6 +27,7 @@ export default function Home() {
         <div className={styles.cards}>
           <Image
             src="/echoesofrevachol/cards.png"
+            //src="/cards.png"
             width={592}
             height={443}
             alt="Echos of Revachol A Disco Elysium Card Game"
