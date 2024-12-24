@@ -39,7 +39,7 @@ export default function PrintHome() {
             alt="Download printables"
           />
           <span className={`${dobraBook.className} ${styles.btnSpan}`}>
-            Now in <strong className={`${dobraMedium.className}`}>English</strong>, <strong className={`${dobraMedium.className}`}>Spanish</strong> and <strong className={`${dobraMedium.className}`}>Russian</strong>! 
+            Now in <strong className={`${dobraMedium.className}`}>English</strong>, <strong className={`${dobraMedium.className}`}>Spanish</strong>, <strong className={`${dobraMedium.className}`}>Russian</strong> and <strong className={`${dobraMedium.className}`}>Turkish</strong>! 
           </span>
         </a>  
         <div className={styles.rules}>     
@@ -97,6 +97,21 @@ export default function PrintHome() {
               alt="Russian"
             />
           </a>
+          <a
+            href="/echoesofrevachol/Revachol_un_Yankıları_Kural_Kitabı.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.simpleLink}
+            title="Download rules"
+          >
+            <Image
+              src="/echoesofrevachol/tur.svg"
+              //src="/tur.svg"
+              width={20}
+              height={14}
+              alt="Türkiye"
+            />
+          </a>
         </div> 
         <div className={styles.dice}>
           <Image
@@ -115,7 +130,10 @@ export default function PrintHome() {
           </span>
         </div>
         <div className={`${dobraBook.className} ${styles.credits}`}>
-          Credits for the Russian translation to <strong className={`${dobraMedium.className}`}>Ilya F</strong> ❤️!
+          Russian translation by <strong className={`${dobraMedium.className}`}>Ilya F.</strong> ❤️!
+        </div>
+        <div className={`${dobraBook.className} ${styles.credits}`}>
+          Turkish translation by <strong className={`${dobraMedium.className}`}>B. Kelebekli</strong> ❤️!
         </div>
 
         <div className={`${styles.mpc}`}>
