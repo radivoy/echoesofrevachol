@@ -34,17 +34,17 @@ export default function tableTop() {
           />
         </a>
         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3386925048" target="_blank" className={`${encode.className} ${styles.tableTopBtn}`}>
-          Spanish
+          Español
           <Image
             src="/echoesofrevachol/esp.svg"
             //src="/esp.svg"
             width={24}
             height={18}
-            alt="Spanish"
+            alt="Español"
           />
         </a>
-        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3385572414" target="_blank" className={`${encode.className} ${styles.tableTopBtn} ${styles.tableTopBtnTxt}`}>
-          русский
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3385572414" target="_blank" className={`${encode.className} ${styles.tableTopBtn}`}>
+          русский <span>(By <strong>Zverobob</strong> & <strong>AmaliaMoon</strong>)</span>
           <Image
             src="/echoesofrevachol/rus.svg"
             //src="/rus.svg"
@@ -52,10 +52,9 @@ export default function tableTop() {
             height={18}
             alt="Russian"
           />
-          <span>By <strong>Zverobob</strong> & <strong>AmaliaMoon</strong></span>
         </a>
-        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3384766121" target="_blank" className={`${encode.className} ${styles.tableTopBtn} ${styles.tableTopBtnTxt}`}>
-          中文
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3384766121" target="_blank" className={`${encode.className} ${styles.tableTopBtn}`}>
+          中文 <span>(By <strong>18公斤的鳳梨</strong>)</span>
           <Image
             src="/echoesofrevachol/chi.svg"
             //src="/chi.svg"
@@ -63,7 +62,6 @@ export default function tableTop() {
             height={18}
             alt="Chinese"
           />
-          <span>By <strong>18公斤的鳳梨</strong></span>
         </a>
       </div>
     </div>

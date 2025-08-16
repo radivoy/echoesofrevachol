@@ -39,7 +39,7 @@ export default function PrintHome() {
             alt="Download printables"
           />
           <span className={`${dobraBook.className} ${styles.btnSpan}`}>
-            Now in <strong className={`${dobraMedium.className}`}>English</strong>, <strong className={`${dobraMedium.className}`}>Spanish</strong>, <strong className={`${dobraMedium.className}`}>Russian</strong> and <strong className={`${dobraMedium.className}`}>Turkish</strong>! 
+            In <strong className={`${dobraMedium.className}`}>English</strong>, <strong className={`${dobraMedium.className}`}>Spanish</strong>, <strong className={`${dobraMedium.className}`}>Russian</strong>, <strong className={`${dobraMedium.className}`}>Turkish</strong> &amp; <strong className={`${dobraMedium.className}`}>French</strong>! 
           </span>
         </a>  
         <div className={styles.rules}>     
@@ -48,16 +48,16 @@ export default function PrintHome() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.simpleLink}
-            title="Download rules"
+            title="Download English rules"
           >
-            or download rules only
+            download rules &rarr;
           </a>
           <a
             href="/echoesofrevachol/EchoesOfRevachol_Rulebook.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.simpleLink}
-            title="Download rules"
+            title="Download English rules"
           >
             <Image
               src="/echoesofrevachol/eng.svg"
@@ -72,7 +72,7 @@ export default function PrintHome() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.simpleLink}
-            title="Download rules"
+            title="Download Spanish rules"
           >
             <Image
               src="/echoesofrevachol/esp.svg"
@@ -87,7 +87,7 @@ export default function PrintHome() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.simpleLink}
-            title="Download rules"
+            title="Download Russian rules"
           >
             <Image
               src="/echoesofrevachol/rus.svg"
@@ -102,7 +102,7 @@ export default function PrintHome() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.simpleLink}
-            title="Download rules"
+            title="Download Turkish rules"
           >
             <Image
               src="/echoesofrevachol/tur.svg"
@@ -110,6 +110,21 @@ export default function PrintHome() {
               width={20}
               height={14}
               alt="Türkiye"
+            />
+          </a>
+          <a
+              href="/echoesofrevachol/EchoesOfRevachol_Regles.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.simpleLink}
+              title="Download French rules"
+            >
+            <Image
+              src="/echoesofrevachol/fra.svg"
+              //src="/fra.svg"
+              width={20}
+              height={14}
+              alt="Français"
             />
           </a>
         </div> 
@@ -123,21 +138,26 @@ export default function PrintHome() {
           />
           <span className={dobraBook.className}>
             <strong className={dobraMedium.className}>
-              Remember — You’ll need two six-sided dice. 
+              Remember you’ll need two six-sided dice. 
             </strong>
             <br />
-            The kind detectives always keep in their pockets—just in case.
+            The kind detectives always keep in their pockets, just in case.
           </span>
         </div>
-        <div className={`${dobraBook.className} ${styles.credits}`}>
-          Russian translation by <strong className={`${dobraMedium.className}`}>Ilya F.</strong> ❤️!
-        </div>
-        <div className={`${dobraBook.className} ${styles.credits}`}>
-          Turkish translation by <strong className={`${dobraMedium.className}`}>B. Kelebekli</strong> ❤️!
+        <div className={`${styles.creditsWrapper}`}>
+          <div className={`${dobraBook.className} ${styles.credits}`}>
+            Russian translation by <strong className={`${dobraMedium.className}`}>Ilya F.</strong> ❤️!
+          </div>
+          <div className={`${dobraBook.className} ${styles.credits}`}>
+            Turkish translation by <strong className={`${dobraMedium.className}`}>B. Kelebekli</strong> ❤️!
+          </div>
+          <div className={`${dobraBook.className} ${styles.credits}`}>
+            French translation by <strong className={`${dobraMedium.className}`}>Corentin PB</strong> ❤️!
+          </div>
         </div>
 
         <div className={`${styles.mpc}`}>
-          <span>[SUGGESTION]</span> - Having trouble printing the cards? That’s alright — it’s nothing to worry about. We can share you the project on <a href="https://www.makeplayingcards.com" title="Make Playing Cards" target="_blank" rel="noopener noreferrer">makeplayingcards.com</a>, completely free. There’s nothing in it for us, just a chance to make things simpler for you. Email us to <a href="https://www.makeplayingcards.com" title="Make Playing Cards">echoesofrevachol@gmail.com</a>
+          <span>[SUGGESTION]</span> - Having trouble printing the cards? That’s alright, it’s nothing to worry about. We can share you the project on <a href="https://www.makeplayingcards.com" title="Make Playing Cards" target="_blank" rel="noopener noreferrer">makeplayingcards.com</a>, completely free. There’s nothing in it for us, just a chance to make things simpler for you. Email us to <a href="https://www.makeplayingcards.com" title="Make Playing Cards">echoesofrevachol@gmail.com</a>
         </div>
       </div>      
     </div>

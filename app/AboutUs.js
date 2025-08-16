@@ -16,7 +16,7 @@ export default function AboutUs() {
         <p>
           <span className={styles.int}>[CONCEPTUALIZATION]</span> - A labor of
           love. A tribute to the surreal streets of Revachol. This is not an
-          official creation—but it could have been. In another world.
+          official creation, but it could have been. In another world.
         </p>
         <p>
           We are <strong>Melina & Pedro</strong> from the far reaches of{" "}
@@ -25,7 +25,7 @@ export default function AboutUs() {
         </p>
         <p>
           <strong>It’s free</strong>, because joy should be shared. Gather your
-          friends, play, and most importantly—<strong>have a good time</strong>.
+          friends, play, and most importantly<strong>, have a good time</strong>.
         </p>
       </div>
 
